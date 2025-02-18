@@ -1,10 +1,10 @@
 import React from 'react';
 
 const stats = [
-  { value: '1M+', label: 'Sequences Encoded' },
+  { value: '100+', label: 'Sequences Encoded' },
   { value: '99.9%', label: 'Accuracy Rate' },
-  { value: '200+', label: 'Daily Users' },
-  { value: '50K+', label: 'Conversions' },
+  { value: '5+', label: 'Active Users' },
+  { value: '10K+', label: 'Bits Processed' },
 ];
 
 export function Stats() {

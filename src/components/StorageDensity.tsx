@@ -17,7 +17,7 @@ export function StorageDensity() {
           <div>
             <h3 className="text-xl font-semibold text-cyan-300 mb-2">Text Example</h3>
             <p className="text-gray-300 text-lg">
-              The phrase "Hello, I am Mishal." weighs only 3.83 × 10<sup>-23</sup> kg when stored in DNA!
+              The phrase "Hello, I am Mishal." weighs only 3.94 × 10<sup>-23</sup> kg when stored in DNA!
             </p>
           </div>
         </div>
