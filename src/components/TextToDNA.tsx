@@ -1,7 +1,8 @@
 import React from 'react';
-import { Type, ArrowRight, Copy, CheckCircle2 } from 'lucide-react';
+import { Type, ArrowDown, Copy, CheckCircle2 } from 'lucide-react';
 import { useCopyToClipboard } from '../hooks/useCopyToClipboard';
 import { textToBinary, convertToDNA } from '../utils/dnaConverter';
+import { DnaStorageSize } from './DnaStorageSize';
 
 interface TextToDNAProps {
   textInput: string;
@@ -45,7 +46,7 @@ export function TextToDNA({ textInput, onTextInputChange }: TextToDNAProps) {
       </div>
 
       <div className="flex justify-center mb-8">
-        <ArrowRight className="w-8 h-8 text-indigo-400" />
+        <ArrowDown className="w-8 h-8 text-[#0080ff]" />
       </div>
 
       <div className="bg-indigo-900/30 rounded-lg backdrop-blur-sm border border-indigo-500/20 p-6">
@@ -65,9 +66,10 @@ export function TextToDNA({ textInput, onTextInputChange }: TextToDNAProps) {
             {copied ? 'Copied!' : 'Copy'}
           </button>
         </div>
-        <div className="p-3 bg-indigo-900/40 rounded-lg font-mono text-lg border border-indigo-500/20 break-all">
+        <div className="p-3 mt-5 mb-3 bg-indigo-900/40 rounded-lg font-mono text-lg border border-indigo-500/20 break-all">
           {textDNA || 'DNA sequence will appear here'}
         </div>
+        <DnaStorageSize dnaSequence={textDNA} />
       </div>
     </div>
   );

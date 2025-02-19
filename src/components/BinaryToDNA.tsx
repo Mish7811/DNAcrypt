@@ -1,5 +1,5 @@
 import React from 'react';
-import { Binary, ArrowRight, Copy, CheckCircle2 } from 'lucide-react';
+import { Binary, ArrowDown, Copy, CheckCircle2 } from 'lucide-react';
 import { useCopyToClipboard } from '../hooks/useCopyToClipboard';
 import { convertToDNA } from '../utils/dnaConverter';
 
@@ -47,7 +47,7 @@ export function BinaryToDNA({ binaryInput, onBinaryInputChange }: BinaryToDNAPro
       </div>
 
       <div className="flex justify-center mb-8">
-        <ArrowRight className="w-8 h-8 text-indigo-400" />
+        <ArrowDown className="w-8 h-8 text-indigo-400" />
       </div>
 
       <div className="bg-indigo-900/30 rounded-lg backdrop-blur-sm border border-indigo-500/20 p-6">
