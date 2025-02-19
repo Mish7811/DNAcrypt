@@ -5,14 +5,15 @@ import { Hero } from './components/Hero';
 import { Stats } from './components/Stats';
 import { BinaryToDNA } from './components/BinaryToDNA';
 import { TextToDNA } from './components/TextToDNA';
-import { DNAtoText } from './components/DNAToText';
+// import { DNAtoText } from './components/DNAToText';
 import { StorageDensity } from './components/StorageDensity';
 import { Documentation } from './components/Documentation';
+import { DNADecrypter } from './components/DnaDecrypter';
 
 function App() {
   const [binaryInput, setBinaryInput] = useState('');
   const [textInput, setTextInput] = useState('');
-  const [dnaInput, setDnaInput] = useState('');
+  // const [dnaInput, setDnaInput] = useState('');
 
   const converterRef = useRef<HTMLDivElement>(null);
   const textRef = useRef<HTMLDivElement>(null);
@@ -60,12 +61,12 @@ function App() {
                       <div ref={dnaRef} className="rounded-3xl p-3 backdrop-blur-sm border border-indigo-500/20">
                       </div>    
 
-                      <div ref={dnaRef} className="bg-indigo-900/20 rounded-2xl p-8 backdrop-blur-sm border border-indigo-500/20">
+                      {/* <div ref={dnaRef} className="bg-indigo-900/20 rounded-2xl p-8 backdrop-blur-sm border border-indigo-500/20">
                         <DNAtoText
                           dnaInput={dnaInput}
                           onDnaInputChange={setDnaInput}
                         />
-                      </div>    
+                      </div>     */}
 
                     </div>
 
@@ -77,6 +78,7 @@ function App() {
               } 
             />
             <Route path="/documentation" element={<Documentation />} />
+            <Route path="/decrypter" element={<DNADecrypter />} />
           </Routes>
         </div>
       </div>
