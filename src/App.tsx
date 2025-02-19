@@ -8,7 +8,7 @@ import { TextToDNA } from './components/TextToDNA';
 // import { DNAtoText } from './components/DNAToText';
 import { StorageDensity } from './components/StorageDensity';
 import { Documentation } from './components/Documentation';
-import { DNADecrypter } from './components/DnaDecrypter';
+import { DNADecrypter } from './components/DNADecrypter';
 
 function App() {
   const [binaryInput, setBinaryInput] = useState('');
