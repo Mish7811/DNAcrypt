@@ -46,7 +46,7 @@ export function DNADecrypter() {
 
       <button 
         onClick={() => navigate('/')} 
-        className="bg-purple-600 hover:bg-purple-700 px-6 py-3 rounded-lg transition text-white"
+        className="border border-purple-600 text-purple-400 hover:bg-purple-600/10 px-6 py-3 rounded-lg transition"
       >
         Back to Home
       </button>

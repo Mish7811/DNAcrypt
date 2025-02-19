@@ -16,7 +16,7 @@ export function Navigation({ onTryTextConverter }: NavigationProps) {
             <span className="text-xl font-semibold">DNAcrypt</span>
           </div>
           <div className="flex items-center gap-8">
-            <Link to="/decrypter" className="bg-purple-900 text-white-900 hover:text-purple-400 px-2 py-2 rounded-lg transition">
+            <Link to="/decrypter" className="border border-purple-600 text-purple-400 hover:bg-purple-600/10 px-6 py-3 rounded-lg transition">
               Decrypt DNA
             </Link>
             <Link to="/documentation" className="text-gray-400 hover:text-purple-400 transition">

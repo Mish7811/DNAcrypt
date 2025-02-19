@@ -1,5 +1,6 @@
 import React from 'react';
 import { Binary, Shield } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
   onTryConverter: () => void;
@@ -26,9 +27,9 @@ export function Hero({ onTryConverter }: HeroProps) {
             <Binary className="w-5 h-5" />
             Try Converter
           </button>
-          <button className="border border-purple-600 text-purple-400 hover:bg-purple-600/10 px-6 py-3 rounded-lg transition">
-            Learn More
-          </button>
+          <Link to="/documentation" className="border border-purple-600 text-purple-400 hover:bg-purple-600/10 px-6 py-3 rounded-lg transition">
+              Learn More
+          </Link>
         </div>
       </div>
       <div className="relative">
